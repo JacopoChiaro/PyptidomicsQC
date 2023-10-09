@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>File Upload Form</title>
+  </head>
+  <body>
+    <h1>File Upload Form</h1>
+    <form method="POST" action="{{ url_for('analyze') }}" enctype="multipart/form-data">
+      <div>
+        <label for="text">Add Sample name:</label>
+        <input type="text" id="sample_name" name="sample_name">
+      </div>
+      <br>
+      <div>
+        <label for="file1">File 1 (mandatory):</label>
+        <input type="file" id="file1" name="file1" required>
+      </div>
+      <br>
+      <div>
+        <label for="file2">File 2 (mandatory):</label>
+        <input type="file" id="file2" name="file2" required>
+      </div>
+      <br>
+      <div>
+        <label for="file3">File 3 (optional):</label>
+        <input type="file" id="file3" name="file3">
+      </div>
+      <br>
+      <div>
+        <label for="file4">File 4 (optional):</label>
+        <input type="file" id="file4" name="file4">
+      </div>
+      <br>
+      <div>
+        <label for="file5">File 5 (optional):</label>
+        <input type="file" id="file5" name="file5">
+      </div>
+      <br>
+      <div>
+        <label for="file6">File 6 (optional):</label>
+        <input type="file" id="file6" name="file6">
+      </div>
+      <br>
+      <div>
+        <label for="text">Add HLAs of interest separated by a comma (HLA-A0201, H2-Kb):</label>
+        <input type="text" id="text" name="text">
+      </div>
+      <br>
+      <div>
+        <button type="submit">Analyze Files</button>
+      </div>
+    </form>
+  </body>
+</html>

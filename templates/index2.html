@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>File Upload Form</title>
+  </head>
+  <body>
+    <h1>File Upload Form</h1>
+    <a href="{{ url_for('download', 
+                         hist_df=hist_df, 
+                         hist_percent_df=hist_percent_df, 
+                         overlap_df=overlap_df, 
+                         upset_data2=upset_data2, 
+                         concat_MHC_runs2=concat_MHC_runs2, 
+                         merged_counts=merged_counts, 
+                         merged_percent=merged_percent,
+                         filename=folder_name) }}" 
+       download >Download log Files</a> 
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Analysis Results</title>
+  </head>
+  <body>
+    <h1>Analysis Results</h1>
+    <div>
+      <h2>HLAs selected</h2>
+      <p>{{ text }}</p>
+      <p>{{ alleles }}</p>
+    </div>
+    <div>
+      {% if graph1 and graph2 %}
+        <h2>Peptide Length Distribution</h2>
+        {{ graph1 | safe }}{{ graph2 | safe }}
+      {% endif %}
+    </div>
+    <div style="width: 800px; height: 600px;">
+      {% if graph3 %}
+        <h2>Peptide Overlap</h2>
+        {{ graph3 | safe }}
+      {% endif %}
+    </div>
+    <br \>
+    <div>
+      {% if graph4 and graph5%}
+        <h2>Peptide Binding Affinity Deconvolution</h2>
+        {{ graph4 | safe }}{{ graph5 | safe }}
+      {% endif %}
+    </div>
+    <br \>
+    <br \>    
+    <a href="{{ url_for('download', filename=folder_name) }}" download >Download log Files</a>
+    <br \>
+    <br \>
+  </body>
+</html>
