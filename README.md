@@ -1,3 +1,5 @@
+![PyptidomicsQC_logo](https://github.com/JacopoChiaro/PyptidomicsQC/assets/70270016/21b50798-8dad-40ff-9e11-d8130b372cb2)
+
 # PyptidomicsQC
 
 1. Download repository
